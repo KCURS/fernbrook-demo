@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fernbrook Home Cleaning · Limpeza residencial (demonstração)</title>
+  <meta name="description" content="Site demonstrativo de uma empresa fictícia de limpeza residencial: limpeza padrão, pesada, de mudança e higienização de estofados. Solicite um orçamento.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f8f4ef">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="nav.js"></script>
+  <script type="module" src="motion.js"></script>
+  <script type="module" src="form.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#quote">Pular para o formulário de orçamento</a>
+
+  <div class="demo-bar" role="note">Site demonstrativo · Fernbrook é uma marca fictícia</div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="Fernbrook Home Cleaning, voltar ao topo">Fernbrook</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#upholstery">Estofados</a></li>
+          <li><a href="#how-it-works">Como funciona</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a class="nav-quote" href="#quote">Solicitar orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero: editorial split, large photo -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>Limpeza residencial</p>
+          <h1 id="hero-title" class="hero-title">
+            <span class="line"><span class="line-inner">Mais tempo para viver.</span></span>
+            <span class="line"><em class="line-inner">Menos preocupações com a limpeza.</em></span>
+          </h1>
+          <p class="hero-lead" data-reveal data-delay="250">Cuidamos dos espaços onde sua vida acontece, com serviços de limpeza residencial pensados para a sua rotina, suas necessidades e seu conforto.</p>
+          <div class="hero-actions" data-reveal data-delay="350">
+            <a class="button button-primary" href="#quote">Solicitar orçamento</a>
+            <a class="text-link" href="#services">Conhecer os serviços</a>
+          </div>
+          <ul class="hero-services" data-reveal data-delay="450" aria-label="Serviços">
+            <li><a href="#service-standard">Padrão</a></li>
+            <li><a href="#service-deep">Pesada</a></li>
+            <li><a href="#service-move">Mudança</a></li>
+            <li><a href="#upholstery">Estofados</a></li>
+          </ul>
+        </div>
+        <figure class="hero-media" data-reveal="photo" data-delay="200">
+          <div class="frame">
+            <img data-parallax src="images/hero-sala-753.webp"
+                 srcset="images/hero-sala-560.webp 560w, images/hero-sala-753.webp 753w"
+                 sizes="(min-width: 960px) 44vw, 92vw" width="753" height="941"
+                 alt="Ilustração de uma sala clara com sofá branco, almofadas rosadas, manta ameixa e mesa de centro de madeira." fetchpriority="high">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Services: image cards -->
+    <section id="services" class="section services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>O que fazemos</p>
+          <h2 id="services-title" class="section-title" data-reveal data-delay="100">Serviços para cada<br>momento da sua casa</h2>
+          <p class="section-intro" data-reveal data-delay="200">Escolha o que combina com a sua rotina. Você conta os detalhes no formulário, e o orçamento é feito a partir do que você descrever.</p>
+        </div>
+
+        <ul class="cards">
+          <li id="service-standard" class="card-service" data-reveal>
+            <div class="card-media">
+              <img data-parallax src="images/card-padrao-640.webp"
+                   srcset="images/card-padrao-640.webp 640w, images/card-padrao-960.webp 960w"
+                   sizes="(min-width: 960px) 30vw, (min-width: 640px) 46vw, 92vw" width="960" height="720" loading="lazy" decoding="async"
+                   alt="Sala clara com sofá azul, plantas e piso de madeira em espinha de peixe.">
+            </div>
+            <div class="card-body">
+              <span class="card-num" aria-hidden="true">01</span>
+              <h3>Limpeza residencial padrão</h3>
+              <p>Salas, quartos, cozinha e banheiros em ordem, na frequência que fizer sentido para você. Para manter a casa leve no dia a dia.</p>
+              <button type="button" class="card-cta" data-select-service="standard">Solicitar orçamento<span class="visually-hidden"> de limpeza residencial padrão</span> <span class="arrow" aria-hidden="true">→</span></button>
+            </div>
+          </li>
+          <li id="service-deep" class="card-service" data-reveal data-delay="120">
+            <div class="card-media">
+              <img data-parallax src="images/ai-bancada-700.webp"
+                   srcset="images/ai-bancada-700.webp 700w, images/ai-bancada-1200.webp 1200w"
+                   sizes="(min-width: 960px) 30vw, (min-width: 640px) 46vw, 92vw" width="1200" height="900" loading="lazy" decoding="async"
+                   alt="Ilustração de uma mão com pano de microfibra rosado limpando uma bancada de pedra clara.">
+            </div>
+            <div class="card-body">
+              <span class="card-num" aria-hidden="true">02</span>
+              <h3>Limpeza pesada</h3>
+              <p>Para quando a casa pede mais atenção: cantos difíceis, rejuntes, armários e eletrodomésticos. Você indica no pedido o que é prioridade.</p>
+              <button type="button" class="card-cta" data-select-service="deep">Solicitar orçamento<span class="visually-hidden"> de limpeza pesada</span> <span class="arrow" aria-hidden="true">→</span></button>
+            </div>
+          </li>
+          <li id="service-move" class="card-service" data-reveal data-delay="240">
+            <div class="card-media">
+              <img data-parallax src="images/card-mudanca-640.webp"
+                   srcset="images/card-mudanca-640.webp 640w, images/card-mudanca-960.webp 960w"
+                   sizes="(min-width: 960px) 30vw, (min-width: 640px) 46vw, 92vw" width="960" height="720" loading="lazy" decoding="async"
+                   alt="Cômodo branco e vazio com porta dupla aberta e piso de madeira clara.">
+            </div>
+            <div class="card-body">
+              <span class="card-num" aria-hidden="true">03</span>
+              <h3>Limpeza de mudança</h3>
+              <p>Imóvel vazio pronto para começar uma nova fase — ou para entregar as chaves com tranquilidade. Informe a data e o tamanho do imóvel.</p>
+              <button type="button" class="card-cta" data-select-service="move">Solicitar orçamento<span class="visually-hidden"> de limpeza de mudança</span> <span class="arrow" aria-hidden="true">→</span></button>
+            </div>
+          </li>
+        </ul>
+
+        <article id="upholstery" class="feature-card" aria-labelledby="upholstery-title" data-reveal>
+          <div class="feature-media">
+            <img data-parallax src="images/card-estofados-760.webp"
+                 srcset="images/card-estofados-760.webp 760w, images/card-estofados-1200.webp 1200w"
+                 sizes="(min-width: 960px) 52vw, 92vw" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="Ilustração de um homem com extratora higienizando um sofá branco em uma sala clara.">
+          </div>
+          <div class="feature-body">
+            <span class="card-num" aria-hidden="true">04</span>
+            <h3 id="upholstery-title">Higienização de estofados</h3>
+            <p class="feature-lead">Sofás, poltronas e cadeiras estofadas acompanham o dia a dia da família — e merecem o mesmo cuidado que o resto da casa.</p>
+            <p>No pedido, conte:</p>
+            <ul class="check-list">
+              <li>o tipo de móvel e a quantidade;</li>
+              <li>o tecido, se você souber;</li>
+              <li>manchas ou cuidados especiais.</li>
+            </ul>
+            <button type="button" class="button button-primary button-small" data-select-service="upholstery">Solicitar orçamento<span class="visually-hidden"> de higienização de estofados</span></button>
+          </div>
+        </article>
+
+        <div class="other-card" data-reveal>
+          <p><strong>Precisa de outro serviço?</strong> Descreva o que você precisa e o pedido será analisado.</p>
+          <button type="button" class="card-cta" data-select-service="other">Descrever meu pedido <span class="arrow" aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works: soft band with organic edges -->
+    <section id="how-it-works" class="section how" aria-labelledby="how-title">
+      <svg class="wave wave-top" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 62C180 18 360 6 560 30s400 70 600 52 220-48 280-60V100H0Z" fill="currentColor"/></svg>
+      <svg class="wave wave-bottom" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 38C200 82 420 96 640 70s380-66 560-58 200 28 240 36V0H0Z" fill="currentColor"/></svg>
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow" data-reveal>Simples do início ao fim</p>
+          <h2 id="how-title" class="section-title" data-reveal data-delay="100">Como funciona</h2>
+        </div>
+        <ol class="steps">
+          <li data-reveal>
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Escolha o serviço</h3>
+            <p>Padrão, pesada, mudança, estofados — ou descreva outro pedido.</p>
+          </li>
+          <li data-reveal data-delay="140">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Conte sobre a sua casa</h3>
+            <p>Tamanho, cômodos e prioridades ajudam a preparar um orçamento adequado.</p>
+          </li>
+          <li data-reveal data-delay="280">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Acompanhe a confirmação</h3>
+            <p>Assim que o pedido é registrado, um número de referência aparece na tela.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- About: oversized split name around the kitchen photo -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="visually-hidden">Sobre a Fernbrook</h2>
+        <div class="about-name" aria-hidden="true">
+          <span class="about-small" data-reveal>Esta é a</span>
+          <span class="about-word about-left" data-reveal>Fern</span>
+          <figure class="about-media" data-reveal="photo" data-delay="150">
+            <img data-parallax src="images/ai-cozinha-480.webp"
+                 srcset="images/ai-cozinha-480.webp 480w, images/ai-cozinha-724.webp 724w"
+                 sizes="(min-width: 960px) 320px, 62vw" width="724" height="1086" loading="lazy" decoding="async" alt="">
+          </figure>
+          <span class="about-word about-right" data-reveal data-delay="300">brook</span>
+        </div>
+        <div class="about-text" data-reveal>
+          <p class="about-lead">Acreditamos que uma casa bem cuidada devolve tempo e tranquilidade para o que realmente importa.</p>
+          <p>Cada pedido começa entendendo a sua rotina, o tamanho da casa e as suas prioridades — para que o serviço combine com o seu jeito de viver.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action: photo band with organic edges -->
+    <section class="cta" aria-labelledby="cta-title">
+      <svg class="wave-cut wave-cut-top" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 0H1440V40C1240 84 1020 92 800 64S420 4 220 16 40 52 0 60Z" fill="currentColor"/></svg>
+      <svg class="wave-cut wave-cut-bottom" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 100H1440V56C1260 18 1060 8 860 34S480 96 280 86 60 54 0 44Z" fill="currentColor"/></svg>
+      <img class="cta-photo" src="images/cta-1600.webp"
+           srcset="images/cta-900.webp 900w, images/cta-1600.webp 1600w"
+           sizes="100vw" width="1600" height="1067" loading="lazy" decoding="async" alt="">
+      <div class="cta-inner" data-reveal>
+        <p class="cta-feeling">Imagine chegar em casa e encontrar tudo em ordem.</p>
+        <h2 id="cta-title" class="section-title">Seu próximo passo<br>é simples.</h2>
+        <p class="cta-note">Conte o que a sua casa precisa e solicite um orçamento.</p>
+        <a class="circle-button" href="#quote"><span class="circle-label">Solicitar<br>orçamento</span><span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <div class="section-head center">
+          <h2 id="faq-title" class="section-title" data-reveal>Dúvidas frequentes</h2>
+        </div>
+        <div class="faq" data-reveal data-delay="120">
+          <details>
+            <summary>Como peço um orçamento?</summary>
+            <p>Escolha o serviço, conte alguns detalhes sobre a casa e envie o formulário abaixo.</p>
+          </details>
+          <details>
+            <summary>O preço aparece no site?</summary>
+            <p>Não. O valor depende do serviço, do tamanho da casa e dos detalhes informados — por isso cada orçamento é feito a partir do seu pedido.</p>
+          </details>
+          <details>
+            <summary>Vocês fazem higienização de estofados?</summary>
+            <p>Sim. Escolha “Higienização de estofados” no formulário e informe o tipo de móvel, a quantidade e o tecido, se souber.</p>
+          </details>
+          <details>
+            <summary>Posso pedir um serviço que não está na lista?</summary>
+            <p>Sim. Escolha “Outro” e descreva o que você precisa.</p>
+          </details>
+          <details>
+            <summary>Como sei que meu pedido foi recebido?</summary>
+            <p>A confirmação, com número de referência, aparece na tela somente depois que o pedido é registrado. Se algo der errado, a página avisa que o pedido não foi enviado.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="section quote" aria-labelledby="quote-title">
+      <div class="container narrow">
+        <div class="section-head center">
+          <p class="eyebrow" data-reveal>Orçamento</p>
+          <h2 id="quote-title" class="section-title" data-reveal data-delay="100">Solicitar orçamento</h2>
+          <p class="section-intro" data-reveal data-delay="200">Leva poucos minutos. Campos marcados com <span class="req-mark" aria-hidden="true">*</span><span class="visually-hidden">asterisco</span> são obrigatórios.</p>
+        </div>
+
+        <div id="intake-status" class="notice notice-warning" role="status" hidden>
+          <svg class="notice-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 2 20h20L12 3Zm0 6v5m0 3v.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <p class="notice-title">Formulário em modo de demonstração</p>
+            <p>Os pedidos enviados por esta página ainda não são entregues nem salvos.</p>
+          </div>
+        </div>
+
+        <div id="result" class="result" tabindex="-1" hidden></div>
+
+        <form id="quote-form" class="card form" novalidate>
+          <div id="error-summary" class="notice notice-error" role="alert" tabindex="-1" hidden>
+            <svg class="notice-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7.5v5.5m0 3.5v.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <div>
+              <p class="notice-title">Revise os seguintes campos:</p>
+              <ul id="error-summary-list"></ul>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="name">Nome completo <span class="req-mark" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="100" aria-describedby="name-error">
+            <p id="name-error" class="field-error" hidden></p>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">E-mail <span class="req-mark" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="254" aria-describedby="email-error">
+              <p id="email-error" class="field-error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="phone">Telefone <span class="optional">(opcional)</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" aria-describedby="phone-hint phone-error">
+              <p id="phone-hint" class="hint">Número dos EUA, como (555) 123-4567</p>
+              <p id="phone-error" class="field-error" hidden></p>
+            </div>
+          </div>
+
+          <fieldset class="field" aria-describedby="service-error">
+            <legend>Serviço desejado <span class="req-mark" aria-hidden="true">*</span></legend>
+            <div class="choice-grid">
+              <label class="choice"><input type="radio" name="service" value="standard" required> <span>Limpeza residencial padrão</span></label>
+              <label class="choice"><input type="radio" name="service" value="deep"> <span>Limpeza pesada</span></label>
+              <label class="choice"><input type="radio" name="service" value="move"> <span>Limpeza de mudança (entrada ou saída)</span></label>
+              <label class="choice"><input type="radio" name="service" value="upholstery"> <span>Higienização de estofados</span></label>
+              <label class="choice"><input type="radio" name="service" value="other"> <span>Outro</span></label>
+            </div>
+            <p id="service-error" class="field-error" hidden></p>
+          </fieldset>
+
+          <div class="field field-zip">
+            <label for="zip">ZIP code — CEP dos EUA <span class="optional">(opcional)</span></label>
+            <input id="zip" name="zip" type="text" autocomplete="postal-code" inputmode="numeric" maxlength="10" aria-describedby="zip-hint zip-error">
+            <p id="zip-hint" class="hint">5 dígitos, como 12345</p>
+            <p id="zip-error" class="field-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="details">Detalhes <span class="req-mark" aria-hidden="true">*</span></label>
+            <textarea id="details" name="details" rows="6" required minlength="10" maxlength="1000" aria-describedby="details-hint details-count details-error"></textarea>
+            <div class="hint-row">
+              <p id="details-hint" class="hint">Ajuda informar: tipo de limpeza, número de quartos e banheiros, tamanho aproximado do imóvel, data ou período desejado e necessidades especiais. Não inclua dados de pagamento.</p>
+              <p id="details-count" class="hint counter" aria-live="polite">0 / 1000</p>
+            </div>
+            <p id="details-error" class="field-error" hidden></p>
+          </div>
+
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Deixe este campo vazio</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+            <label class="checkbox" for="consent">
+              <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error">
+              <span>Concordo em ser contatado(a) sobre este pedido. <span class="req-mark" aria-hidden="true">*</span></span>
+            </label>
+            <p id="consent-error" class="field-error" hidden></p>
+          </div>
+
+          <div id="submit-error" class="notice notice-error" role="alert" tabindex="-1" hidden></div>
+
+          <button id="submit" class="button button-primary button-block" type="submit">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="button-label">Enviar pedido</span>
+          </button>
+          <p class="hint form-footnote">Usamos estes dados apenas para responder a este pedido.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <svg class="wave wave-top wave-footer" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 62C180 18 360 6 560 30s400 70 600 52 220-48 280-60V100H0Z" fill="currentColor"/></svg>
+    <div class="footer-inner">
+      <p class="footer-wordmark">Fernbrook</p>
+      <nav aria-label="Rodapé">
+        <ul class="footer-nav">
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#upholstery">Estofados</a></li>
+          <li><a href="#how-it-works">Como funciona</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a href="#quote">Solicitar orçamento</a></li>
+        </ul>
+      </nav>
+      <p class="footer-legal">© 2026 Fernbrook Home Cleaning · Marca fictícia para demonstração · Imagens ilustrativas, algumas geradas por IA</p>
+      <p class="footer-credit">Projeto demonstrativo de desenvolvimento web criado por <span class="footer-author">Cindel Ursini</span>. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="mobile-cta" href="#quote" id="mobile-cta">Solicitar orçamento</a>
+</body>
+</html>
